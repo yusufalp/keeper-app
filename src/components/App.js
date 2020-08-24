@@ -14,7 +14,7 @@ function App() {
     })
   }
 
-  function deleteNote(noteId){
+  function deleteNote(noteId) {
     console.log(noteId);
     setNotes(prevNotes => {
       return (
