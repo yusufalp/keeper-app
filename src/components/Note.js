@@ -3,7 +3,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 function Note(props) {
 
-  function handleClick(){
+  function handleClick() {
     return props.deleteNote(props.id);
   }
 
@@ -13,8 +13,8 @@ function Note(props) {
       <p>{props.content}</p>
       <button
         onClick={handleClick}>
-          <DeleteIcon />
-        </button>
+        <DeleteIcon />
+      </button>
     </div>
   );
 }

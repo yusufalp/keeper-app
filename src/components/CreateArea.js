@@ -23,7 +23,7 @@ function CreateArea(props) {
   function submitNote(event) {
     event.preventDefault();
     props.addNote(note);
-    setNote({title:'', content: ''})
+    setNote({ title: '', content: '' })
   }
 
   return (
@@ -41,7 +41,7 @@ function CreateArea(props) {
           rows="3"
           value={note.content} />
         <button onClick={submitNote} >
-          <AddCircleIcon/>
+          <AddCircleIcon />
         </button>
       </form>
     </div>
