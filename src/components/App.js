@@ -11,15 +11,15 @@ function App() {
   function addNote(note) {
     setNotes(prevNotes => {
       return [...prevNotes, note];
-    })
+    });
   }
 
   function deleteNote(noteId) {
     setNotes(prevNotes => {
       return (
         prevNotes.filter((note, index) => index !== noteId)
-      )
-    })
+      );
+    });
   }
 
   return (
